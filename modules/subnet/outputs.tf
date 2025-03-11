@@ -17,3 +17,8 @@ output "resource_id" {
   description = "The resource ID of the subnet."
   value       = azapi_resource.subnet.id
 }
+
+output "shared_vnet" {
+  description = "The resource ID of the subnet."
+  value       = azapi_update_resource.enable_shared_vnet
+}
