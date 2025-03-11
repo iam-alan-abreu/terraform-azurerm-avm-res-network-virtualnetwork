@@ -51,7 +51,8 @@ resource "azapi_resource" "subnet" {
   lifecycle {
     ignore_changes = [
       body.properties.ipConfigurations,
-      body.properties.privateEndpoints
+      body.properties.privateEndpoints,
+      body.properties.routeTable
     ]
   }
 }
